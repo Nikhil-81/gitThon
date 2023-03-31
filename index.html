@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <div class="nav" >
+
+    </div>
+    <div class="main" >
+       
+<form  id="form" onsubmit="" >
+ <div>
+
+     <input type="text"  id="title" placeholder="Title" />
+    </div>
+
+    
+    <div>
+    <textarea type="text" id="dec" placeholder="description" rows="4" cols="50" ></textarea>
+
+    </div>
+    <div>
+        <select id="mode" >
+            <option value="video" >video Assingment</option>
+            <option value="artical" >Artical</option>
+
+        </select>
+    </div>
+    <div>
+    <label for="startDate">Start-date</label>
+
+    <input id="sd"  class="startDate" type="date" />
+    </div>
+    <div>
+    <label for="endDate">End-date</label>
+
+    <input id="ed" class="endDate" type="date" />
+</div>
+<div>
+    <input id="task" placeholder="write the task" />
+    <button class="add_task_button"  onClick="hendleAdd_task()" >ADD +</button>
+</div>
+<div>
+    
+    <button onclick="hendlesubmit()"  >Submit</button>
+</div>
+</form>
+    </div>
+    <div class="task_section" >
+        <ol>
+          
+        </ol>
+    </div>
+</body>
+<script src="./index.js" type="module" ></script>
+</html>

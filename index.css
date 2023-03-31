@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(243, 243, 243);
+    box-sizing: border-box;
+}
+.main{
+    margin:auto;
+    width: 40%;
+    /* border: 1px solid rgb(65, 152, 192);  */
+    border-radius: 10px;
+    box-shadow: rgba(65, 152, 192, 0.25) 0px 2px 5px -1px, rgba(0, 2, 1, 0.4) 0px 1px 3px -1px;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.main>form{
+    margin: 2rem;
+}
+.main>form div{
+    margin-bottom: 3rem;
+}
+
+.main>form div:last-child>button{
+    padding: 0.6rem 1.2rem;
+    background-color: rgb(65, 152, 192);
+    border: 0;
+    border-radius: 5px;
+    color: antiquewhite;
+
+}
+.main>form div:last-child>button:hover{
+    cursor: pointer;
+    background-color: rgb(56, 172, 226);
+}
+.add_task_button:hover{
+    cursor: pointer;
+    background-color: rgb(63, 206, 127);
+}
+.add_task_button{
+    padding: 0.6rem 1.2rem;
+    background-color: rgb(65, 192, 122);
+    border: 0;
+    border-radius: 5px;
+    color: antiquewhite;
+}
+
+.task_section{
+    width: 60%;
+    margin: auto;
+    border: 1px solid rgb(56, 172, 226);;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+/* navbat  */
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+}
+.nav>h3{
+margin: 5rem;
+}
+.nav>h3 a{
+    text-decoration: none;
+
+    color: black;
+    
+}
+.nav>h3 a:hover{
+    color: red;
+    border:1px solid black;
+    padding:0.6rem 1.6rem
+}
