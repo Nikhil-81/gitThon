@@ -3,3 +3,23 @@ body{
     box-sizing: border-box;
 }
 
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+}
+.nav>h3{
+margin: 5rem;
+}
+.nav>h3 a{
+    text-decoration: none;
+
+    color: black;
+    
+}
+.nav>h3 a:hover{
+    color: red;
+    border:1px solid black;
+    padding:0.6rem 1.6rem
+}

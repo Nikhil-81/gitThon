@@ -1,4 +1,4 @@
-import Navbar from "./component/navbar"
+import Navbar from "./component/navbar.js"
 let list=document.querySelector(".Assingment_list")
 let task_info=JSON.parse(localStorage.getItem("task_info")) || []
 let warning=document.querySelector(".warning")
