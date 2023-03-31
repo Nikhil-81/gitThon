@@ -4,7 +4,4 @@
           <h3><a href="/dashbord.html" >user</a></h3>
           `
           )
-    
-
-
 export default Navbar
