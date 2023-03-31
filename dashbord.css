@@ -18,3 +18,10 @@ table {
   .view_assingment:hover{
     cursor: pointer;
   }
+
+  .main_dash{
+    width: 70%;
+    padding: 1.5rem;
+    margin: auto;
+    display: block;
+  }

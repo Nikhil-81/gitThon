@@ -13,7 +13,7 @@ if(bundel.length==0){
 
 
 
-
+document.querySelector(".creattask").addEventListener("click",hendlesubmit)
 function hendlesubmit(){
     event.preventDefault()
 let data={
@@ -36,11 +36,13 @@ form.dec.value=""
 form.sd.value=""
 form.ed.value=""
 form.mode.value=""
+bundel=[]
+task_section.innerHTML=[]
 alert("Task has been added")
 } 
 }
 
-
+document.querySelector(".add_task_button").addEventListener("click",hendleAdd_task)
 function hendleAdd_task(){
     event.preventDefault()
     let t=form.task.value
@@ -53,6 +55,7 @@ function hendleAdd_task(){
 }
 
 function hendle_add_task(){
+    event.preventDefault()
     if(bundel.length !=0){
     console.log(bundel)
     task_section.innerHTML=[]
