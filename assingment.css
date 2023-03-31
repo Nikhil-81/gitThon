@@ -68,3 +68,19 @@ margin: 5rem;
     margin: auto;
     width: 70%;
 }
+
+.video_link_input{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 2rem;
+
+}
+
+.info{
+    color: red;
+    letter-spacing: 0.3px;
+    font-size: 20px;
+    
+}

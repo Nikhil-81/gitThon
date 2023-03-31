@@ -10,7 +10,6 @@ let dev=document.querySelector(".dec")
 let main=document.querySelector(".main1")
 
 
-
 let nav=document.querySelector(".nav")
 nav.innerHTML=Navbar()
 
@@ -42,4 +41,13 @@ function showTask(data){
     )
     title.innerText=`Title: ${data[0].title}`
     dev.innerText=`Decription: ${data[0].dec}`
+}
+if(main){
+
+    document.querySelector(".com_task").addEventListener("click",()=>{
+        let data=task_info.filter((el)=>(el.id!=id))
+        localStorage.setItem("task_info",JSON.stringify(data))
+        localStorage.removeItem("assingment_acces")
+        window.location="dashbord.html"
+    })
 }

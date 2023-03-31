@@ -3,7 +3,7 @@ export default function Artical(){
         `
         <div class="section1">
         <textarea   type="text" id="dec" placeholder="description" ></textarea>
-        <button>Submit</button>
+        <button class="com_task" >Submit</button>
     </div>
         
         `
