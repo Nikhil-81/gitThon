@@ -2,10 +2,15 @@ import Navbar from "./component/navbar.js"
 let form=document.querySelector("#form")
 let bundel= []
 let tasks=JSON.parse(localStorage.getItem("task_info")) || []
-
 let task_section=document.querySelector(".task_section")
+
+// adding the navbar
+
 let nav=document.querySelector(".nav")
 nav.innerHTML=Navbar()
+// 
+
+
 if(bundel.length==0){
     task_section.innerText="No task is added"
 }
@@ -13,9 +18,13 @@ if(bundel.length==0){
 
 
 
+// creating the task object 
+
 document.querySelector(".creattask").addEventListener("click",hendlesubmit)
 function hendlesubmit(){
     event.preventDefault()
+
+    // creating the html tags
 let data={
     id:Date.now(),
     title:form.title.value,
@@ -25,8 +34,9 @@ let data={
     mode:form.mode.value,
     task:bundel   
 }
+//  ----------------------
 
-
+// empting the html tags
 
 if(bundel.length!=0){
 tasks.push(data)
@@ -40,7 +50,12 @@ bundel=[]
 task_section.innerHTML=[]
 alert("Task has been added")
 } 
+// --------------------------
 }
+
+
+
+// creating the task section 
 
 document.querySelector(".add_task_button").addEventListener("click",hendleAdd_task)
 function hendleAdd_task(){
@@ -53,6 +68,7 @@ function hendleAdd_task(){
         form.task.value=""
     }
 }
+// ----------------------
 
 function hendle_add_task(){
     event.preventDefault()

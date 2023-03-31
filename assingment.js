@@ -9,20 +9,29 @@ let title=document.querySelector(".title")
 let dev=document.querySelector(".dec")
 let main=document.querySelector(".main1")
 
+// adding the navbar
 
 let nav=document.querySelector(".nav")
 nav.innerHTML=Navbar()
 
-console.log(id)
+// ----------------------------
+
+//  if exist run the functin getData()
+
 if(id){
     getData()
 }
+
+//----------------------------
 
 function getData(){
 let data=task_info.filter((el)=>(el.id==id))
 console.log(data)
 showTask(data)
 }
+
+
+
 function showTask(data){
     sec2.innerHTML=[]
     if(data[0].mode=="artical"){
